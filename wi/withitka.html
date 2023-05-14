@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stile.css">
+    <title>Моя визитка</title>
+    <style>
+        body{
+            animation: body 30s infinite 1s ease-in-out;
+        }
+        
+        .q{
+            width: 800px;
+            height: 300px;
+            background-color: darkcyan;
+            position: absolute;
+            left: 550px;
+            border-radius: 80px;
+        }
+        .t{
+            width: 800px;
+            height: 200px;
+            background-color: rgb(1, 136, 23);
+            position: absolute;
+            left: 550px;
+            top: 450px;
+            border-radius: 80px;
+            animation: collage 9s infinite 2s ease-in-out;
+
+        }
+        .e{
+            width: 800px;
+            height: 200px;
+            background-color: greenyellow;
+            position: absolute;
+            top: 750px;
+            left: 550px;
+            border-radius: 80px;
+            animation: collage 10s infinite 3s ease-in-out;
+        }
+        .sv{
+            width: 800px;
+            height: 400px;
+            background-color: indianred;
+            position: absolute;
+            top: 1000px;
+            left: 550px;
+            border-radius: 80px;
+            animation: collage 11s infinite 4s ease-in-out;
+        }
+
+        @keyframes collage {
+            10% {background-color: rgb(90, 226, 174)}
+            20%{background-color: rgb(0, 238, 255);}
+            50%{background-color: rgb(119, 112, 216);}
+            
+
+            
+        }
+        @keyframes body{
+            10%{background-color: rgb(63, 116, 4);}
+            50%{background-color: rgb(96, 187, 6);}
+            80%{background-color: lawngreen;}
+        }
+
+        .q {
+            animation: collage 8s infinite 1s ease-in-out;
+        }
+        .h{
+            position: absolute;
+            left: 650px;
+            top: 80px;
+        }
+        .x{
+            position: absolute;
+            left: 860px;
+            top: 120px;
+        }
+        .g{
+            position: absolute;
+            left: 720px;
+            top: 530px;
+        }
+        .l{
+            position: absolute;
+            left: 800px;
+            top: 40px;
+        }
+        .s{
+            position: absolute;
+            left: 750px;
+            top: 450px;
+        }
+        .v{
+            position: absolute;
+            left: 850px;
+            top: 750px;
+        }
+        .n{
+            position: absolute;
+            left: 600px;
+            top: 820px;
+        }
+        .w{
+            position: absolute;
+            left: 800px;
+            top: 1000px;
+        }
+        .r{
+            position: absolute;
+            left: 700px;
+            top: 1100px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="D"></div>
+    <div class="q"></div>
+    <div class="l"><h1>Моя визитка</h1></div>
+    <div class="h"><p><font size='+1'><strong>Я Журин Максим, мне 13 лет. Я живу в г.Обнинск. Занимаюсь плаванием 5 лет.</strong></font></p><a href="https://github.com/hjjoff">GitHub</a></div>
+    <div class="x"><img src="hgh.png" width="120px" height="170px"></div>
+    <div class="t"> </div>
+    <div class="s"><h2>На каких курсах я учился в Технолабе.</h2></div>
+        <div class="g"><table border="2">
+            <tr>
+                <td>Название</td>
+                <td>Статус</td>
+                <td>Года</td>
+            </tr>
+            <tr>
+                <td>Python для начинающих</td>
+                <td>Закончин</td>
+                <td>2020-2021</td>
+            </tr>
+            <tr>
+                <td>Unity в VR</td>
+                <td>Окончен не полностью</td>
+                <td>2021-2022</td>
+            </tr>
+            <tr>
+                <td>Web-програмирование</td>
+                <td>Идет</td>
+                <td>2022-2023</td>
+            </tr>
+        
+        </table></div>
+        <div class="e"></div>
+        <div class="n"><ul>
+            <li>Сайт для продажи инженерных услуг</li>
+            <li>Сайт визитка</li>
+        </ul></div>
+        <div class="v"><h2>Мои проекты.</h2></div>
+        
+            
+        <script>
+        function aboba(pred, yes, no){
+            if  (confirm(pred)) yes()
+            else no()
+        }
+            function showOk(){
+                alert('Ну держи')
+            }
+            function showCanel(){
+                alert('Все равно смотри')
+            }
+            aboba('Вы хотите посмотреть визитку?', showOk, showCanel)
+        </script>
+    
+</body>
+</html>
